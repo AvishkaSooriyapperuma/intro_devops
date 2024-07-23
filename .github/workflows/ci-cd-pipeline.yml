@@ -34,7 +34,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run tests
         run: |
-          export PYTHONPATH=./src
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/srcsrc
           pytest
   build:
     runs-on: ubuntu-latest

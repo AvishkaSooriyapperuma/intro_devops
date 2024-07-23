@@ -1,7 +1,10 @@
-# tests/test_main.py
-
+import sys
 import unittest
-from src.main import hello_world  # Use absolute import
+from src.main import hello_world  # Absolute import
+
+print("Current sys.path:", sys.path)
+
+from src.main import hello_world
 
 class TestMain(unittest.TestCase):
     def test_hello_world(self):
