@@ -36,7 +36,6 @@ jobs:
         run: |
           export PYTHONPATH=./src
           pytest
-
   build:
     runs-on: ubuntu-latest
     needs: run-tests
