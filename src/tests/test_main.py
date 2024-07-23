@@ -1,7 +1,7 @@
 # tests/test_main.py
 
 import unittest
-from src.main import hello_world
+from ..src.main import hello_world  # Relative import
 
 class TestMain(unittest.TestCase):
     def test_hello_world(self):
