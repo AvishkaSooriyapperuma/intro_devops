@@ -6,6 +6,6 @@ setup(
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
-        # list your dependencies here
+        # List your dependencies here
     ],
 )
