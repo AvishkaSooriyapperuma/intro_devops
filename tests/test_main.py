@@ -1,3 +1,4 @@
+import sys
 import unittest
 from src.main import hello_world  # Ensure import is at the top
 
