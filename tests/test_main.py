@@ -1,8 +1,11 @@
+# tests/test_main.py
+
 import sys
 import unittest
 from src.main import hello_world  # Ensure import is at the top
 
 print("Current sys.path:", sys.path)
+
 
 class TestMain(unittest.TestCase):
     def test_hello_world(self):
