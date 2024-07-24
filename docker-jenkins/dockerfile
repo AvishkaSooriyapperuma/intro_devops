@@ -1,0 +1,19 @@
+# Use the Jenkins base image
+FROM jenkins/jenkins:lts
+
+# Switch to root user
+USER root
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y wget unzip
+
+# Download and install Terraform
+RUN wget https://releases.hashicorp.com/terraform/0.15.4/terraform_0.15.4_linux_amd64.zip && \
+    unzip terraform_0.15.4_linux_amd64.zip -d /usr/local/bin/ && \
+    rm terraform_0.15.4_linux_amd64.zip
+
+# Install ansible
+RUN apt-get update && apt-get install -y ansible
+
+# Switch back to the Jenkins user
+USER root
