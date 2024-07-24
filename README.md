@@ -7,19 +7,19 @@ Create Dockerfile and docker-compose.yml:
 
 Build the Docker Image:
 
-docker-compose build
+    docker-compose build
 
 
 Run the Docker Container:
 
-docker-compose up
+    docker-compose up
 
 
 Check Container Logs:
 
-docker-compose logs
+    docker-compose logs
 
 
 Stop the Containers:
 
-docker-compose down
+    docker-compose down
