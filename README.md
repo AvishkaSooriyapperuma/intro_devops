@@ -1,25 +1,30 @@
 # intro_devops
 This repo is created to show how to run an action in a session.
 
-Create Dockerfile and docker-compose.yml:
+To Build the dockerfile:
 
-    Save the provided Dockerfile and docker-compose.yml to your project root.
-
-Build the Docker Image:
-
-    docker-compose build
+    sudo docker build -t python_app .
 
 
 Run the Docker Container:
 
-    docker-compose up
+    sudo docker run -p 4000:80 python_app
 
 
-Check Container Logs:
 
-    docker-compose logs
+#Jenkins_docker image
 
 
-Stop the Containers:
+To Build the dockerfile:
 
-    docker-compose down
+    sudo docker build -t jenkins-with-tf /path/to/dockerfile/
+
+
+Run the Docker Container:
+
+    sudo docker run -d -p 8080:8080 -p 50000:50000 jenkins-with-tf
+
+Take the admin password
+
+    sudo docker logs <container_id>
+
